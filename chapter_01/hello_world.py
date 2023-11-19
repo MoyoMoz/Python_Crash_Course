@@ -13,5 +13,5 @@ print("Hello Python world!")
 # It's a good habit to keep an "ideas" notebook that you can refer to whenever you want to start a new project. 
 # Take a few minutes now to describe three programs you'd like to create.
 
-print("If you had infinite programming skills I would create a device that could read soil health in a very detailed way. 
+print("If I had infinite programming skills I would create a device that could read soil health in a very detailed way. 
 It would give advice and instructions on different ways that the soil could be made healthier for growing nutriant dense food.") 
