@@ -4,6 +4,13 @@
 # should have keys such as first_name, last_name, age, and city. Print each
 # piece of information stored in your dictionary.
 
+kyle_info = {'first_name': 'Kyle',
+             'last_name': 'Daniels', 'age': 34, 'city': 'Seattle'}
+print(kyle_info['first_name'])
+print(kyle_info['last_name'])
+print(kyle_info['age'])
+print(kyle_info['city'])
+
 # 6-2. Favorite Numbers: Use a dictionary to store people’s favorite numbers.
 # Think of five names, and use them as keys in your dictionary. Think of a favorite
 # number for each person, and store each as a value in your dictionary. Print
@@ -67,5 +74,3 @@
 # keys in your dictionary. Create a dictionary of information about each city and
 # include the country that the city is in, its approximate population, and one fact
 # about that city. The keys for each city’s dictionary should be something like
-# country population and fact. print the name of each city and all the information
-# you have stored about it

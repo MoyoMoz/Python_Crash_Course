@@ -4,11 +4,22 @@
 # should have keys such as first_name, last_name, age, and city. Print each
 # piece of information stored in your dictionary.
 
+# kyle_info = {'first_name': 'Kyle',
+#              'last_name': 'Daniels', 'age': 34, 'city': 'Seattle'}
+# print(kyle_info['first_name'])
+# print(kyle_info['last_name'])
+# print(kyle_info['age'])
+# print(kyle_info['city'])
+
 # 6-2. Favorite Numbers: Use a dictionary to store people’s favorite numbers.
 # Think of five names, and use them as keys in your dictionary. Think of a favorite
 # number for each person, and store each as a value in your dictionary. Print
 # each person’s name and their favorite number. For even more fun, poll a few
 # friends and get some actual data for your program.
+
+# people = {'mary': 7, 'jenny': 11, 'fabio': 14, 'tim': 3, 'stacy': 77}
+# favorite_number = people['mary']
+# print(f"Mary's favorit number is {favorite_number}")
 
 # 6-3. Glossary: A Python dictionary can be used to model an actual dictionary.
 # However, to avoid confusion, let’s call it a glossary.
@@ -21,12 +32,37 @@
 #   newline character (\n) to insert a blank line between each word-meaning
 #   pair in your output.
 
+# glossary = {'list': 'used to store collection of data',
+#             'dictionary': 'used to store key value pairs',
+#             'variables': 'reserved memory location to store value',
+#             'object oriented programing': 'bundling related properties and behaviors into objects'
+#             }
+
+# print(f"I learned about lists: \nthey are {glossary['list']}")
+# print(f"\nI learned about dictionaries: \nthey are {glossary['dictionary']}")
+# print(f"\nI learned about variables: \nthey are {glossary['variables']}")
+# print(f"\nI learned about object oriented programing: \nit is 
+#       {glossary['object oriented programing']}")
+
+
 # 6-4. Glossary 2: Now that you know how to loop through a dictionary, clean
 # up the code from Exercise 6-3 (page 102) by replacing your series of print
 # statements with a loop that runs through the dictionary’s keys and values.
 # When you’re sure that your loop works, add five more Python terms to your
 # glossary. When you run your program again, these new words and meanings
 # should automatically be included in the output.
+
+glossary = {'list': 'used to store collection of data',
+            'dictionary': 'used to store key value pairs',
+            'variables': 'reserved memory location to store value',
+            'object oriented programing': 'bundling related properties and behaviors into objects'
+            }
+
+print(f"I learned about lists: \nthey are {glossary['list']}")
+print(f"\nI learned about dictionaries: \nthey are {glossary['dictionary']}")
+print(f"\nI learned about variables: \nthey are {glossary['variables']}")
+print(f"\nI learned about object oriented programing: \nit is 
+      {glossary['object oriented programing']}")
 
 # 6-5. Rivers: Make a dictionary containing three major rivers and the country
 # each river runs through. One key-value pair might be 'nile': 'egypt'.
@@ -67,5 +103,3 @@
 # keys in your dictionary. Create a dictionary of information about each city and
 # include the country that the city is in, its approximate population, and one fact
 # about that city. The keys for each city’s dictionary should be something like
-# country population and fact. print the name of each city and all the information
-# you have stored about it

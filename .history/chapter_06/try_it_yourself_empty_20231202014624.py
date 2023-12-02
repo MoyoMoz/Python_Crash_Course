@@ -69,3 +69,27 @@
 # about that city. The keys for each city’s dictionary should be something like
 # country population and fact. print the name of each city and all the information
 # you have stored about it
+
+# cities = {
+#     'Tokyo': {
+#         'country': 'Japan',
+#         'population': '13.96 million',
+#         'fact': 'Tokyo is known for its towering skyscrapers and modern technology.'
+#     },
+#     'Paris': {
+#         'country': 'France',
+#         'population': '2.16 million',
+#         'fact': 'Paris is famous for its art, fashion, gastronomy, and culture.'
+#     },
+#     'Cairo': {
+#         'country': 'Egypt',
+#         'population': '9.5 million',
+#         'fact': 'Cairo is known for its rich history and the nearby location of the Pyramids of Giza.'
+#     }
+# }
+
+# for city, information in cities.items():
+#     print(f"\n Here is all our data about {city}:")
+
+#     for key, value in information.items():
+#         print(f" \n{key}: {value} \n")
