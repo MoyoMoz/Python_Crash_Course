@@ -46,17 +46,6 @@
 # and if they are over age 12, the ticket is $15. Write a loop in which you ask users their age,
 # and then tell them the cost of their movie ticket.
 
-# ticket_price = ""
-# age = input("what is your age? ")
-# age = int(age)
-# if age < 3:
-#     ticket_price = "your ticket is free"
-# elif age < 13:
-#     ticket_price = "your ticket is $10"
-# else:
-#     ticket_price = "your ticket is $15"
-# print(ticket_price)
-
 
 # 7-6. Three Exits: Write different versions of either Exercise 7-4 or 7-5 that do each of the following at least once:
 # - Use a conditional test in the while statement to stop the loop.
