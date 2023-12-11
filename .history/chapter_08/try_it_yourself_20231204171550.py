@@ -101,38 +101,6 @@
 # information, call make_album() with the user's input and print the dictionary
 # that's created. Be sure to include a quit value in the while loop.
 
-def make_album(artist_name, album_title, number_of_songs=None):
-    """Build a dictionary containing information about an album."""
-    album_dict = {
-        'artist': artist_name,
-        'album': album_title,
-    }
-    if number_of_songs:
-        album_dict['number_of_songs'] = number_of_songs
-    return album_dict
-
-
-while True:
-    print("\nPlease enter the artist and album information:")
-    print("(enter 'q' at any time to quit)")
-
-    artist = input("Artist name: ")
-    if artist.lower() == 'q':
-        break
-
-    title = input("Album title: ")
-    if title.lower() == 'q':
-        break
-
-    album = make_album(artist, title)
-    print(f"Album info: {album}")
-
-    keep_going = input("Would you like to enter another album? (yes/no) ")
-    if keep_going.lower() != 'yes':
-        break
-
-print("Thank you for using the album entry program!")
-
 # 8-9. Messages: Make a list containing a series of short text messages. Pass the
 # list to a function called show_messages(), which prints each text message.
 

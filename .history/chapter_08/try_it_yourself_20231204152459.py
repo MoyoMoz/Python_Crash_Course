@@ -13,10 +13,11 @@
 # favorite books is Alice in Wonderland. Call the function, making sure to include
 # a book title as an argument in the function call.
 
-# def favorite_book(book_title):
-#     print(f"One of my favorite books is {book_title.title()}")
+def favorite_book(book_title):
+    print(f"One of my favorite books is {book_title.title()}")
 
-# favorite_book('the never ending story')
+
+favorite_book('the never ending story')
 
 # 8-3. T-Shirt: Write a function called make_shirt() that accepts a size and the
 # text of a message that should be printed on the shirt. The function should print a
@@ -24,28 +25,9 @@
 # function once using positional arguments to make a shirt. Call the function a
 # second time using keyword arguments.
 
-# def make_shirt(shirt_size, shirt_text):
-#     print(f'''Your shirt order is ready. Let's make sure we got it right...
-#           size {shirt_size} message will read {shirt_text}''')
-
-
-# make_shirt('Small', 'Yolo')
-# make_shirt(shirt_size='Large', shirt_text='Paris')
-
 # 8-4. Large Shirts: Modify the make_shirt() function so that shirts are large by
 # default with a message that reads I love Python. Make a large shirt and a medium
 # shirt with the default message, and a shirt of any size with a different message.
-
-# def make_shirt(shirt_size='Large', shirt_text="I Love Python"):
-#     print(f'''Your shirt order is ready. Let's make sure we got it right...
-#           size {shirt_size} message will read {shirt_text}''')
-
-# make_shirt()
-# # Make a medium shirt with the default message
-# make_shirt(shirt_size='Medium')
-
-# # Make a shirt of any size with a different message
-# make_shirt(shirt_text='Python is great', shirt_size='Small')
 
 # 8-5. Cities: Write a function called describe_city() that accepts the name of a
 # city and its country. The function should print a simple sentence, such as
@@ -53,25 +35,10 @@
 # function for three different cities, at least one of which is not in the default
 # country.
 
-# def describe_city(city_name, country='France',):
-#     print(f"{city_name}, which is in {country} is a chill place to visit")
-
-# describe_city("Paris")
-# describe_city("Florance", country="Italy")
-# describe_city("Varcie")
-
 # 8-6. City Names: Write a function called city_country() that takes in the name
 # of a city and its country. The function should return a string formatted like
 # this: "Santiago, Chile". Call your function with at least three city-country pairs,
 # and print the values that are returned.
-
-# def city_country(city_name, country):
-#     print(f''' "{city_name}, {country}" ''')
-
-# city_country('Maputo', 'Mozambique')
-# city_country('Austin', 'USA')
-# city_country('Lagos', 'Nigeria')
-
 
 # 8-7. Album: Write a function called make_album() that builds a dictionary
 # describing a music album. The function should take in an artist name and an
@@ -83,55 +50,10 @@
 # includes a value for the number of songs, add that value to the album's dictionary.
 # Make at least one new function call that includes the number of songs on an album.
 
-# def make_album(artist_name, album_title, number_of_songs=None):
-#     album = {"artist": artist_name, "album": album_title}
-#     if number_of_songs:
-#         album["song_amount"] = number_of_songs
-#     return album
-
-
-# album_1 = make_album('Joan', 'Folk Glory', '7')
-# album_2 = make_album('Joan', 'Folk Story 1')
-# album_3 = make_album('Joan', 'Folk Forever')
-# print(album_1, album_2, album_3)
-
-
 # 8-8. User Albums: Start with your program from Exercise 8-7. Write a while loop
 # that allows users to enter an album's artist and title. Once you have that
 # information, call make_album() with the user's input and print the dictionary
 # that's created. Be sure to include a quit value in the while loop.
-
-def make_album(artist_name, album_title, number_of_songs=None):
-    """Build a dictionary containing information about an album."""
-    album_dict = {
-        'artist': artist_name,
-        'album': album_title,
-    }
-    if number_of_songs:
-        album_dict['number_of_songs'] = number_of_songs
-    return album_dict
-
-
-while True:
-    print("\nPlease enter the artist and album information:")
-    print("(enter 'q' at any time to quit)")
-
-    artist = input("Artist name: ")
-    if artist.lower() == 'q':
-        break
-
-    title = input("Album title: ")
-    if title.lower() == 'q':
-        break
-
-    album = make_album(artist, title)
-    print(f"Album info: {album}")
-
-    keep_going = input("Would you like to enter another album? (yes/no) ")
-    if keep_going.lower() != 'yes':
-        break
-
-print("Thank you for using the album entry program!")
 
 # 8-9. Messages: Make a list containing a series of short text messages. Pass the
 # list to a function called show_messages(), which prints each text message.
