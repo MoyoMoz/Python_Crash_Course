@@ -101,25 +101,134 @@
 # information, call make_album() with the user's input and print the dictionary
 # that's created. Be sure to include a quit value in the while loop.
 
+# def make_album(artist_name, album_title, number_of_songs=None):
+#     """Build a dictionary containing information about an album."""
+#     album_dict = {
+#         'artist': artist_name,
+#         'album': album_title,
+#     }
+#     if number_of_songs:
+#         album_dict['number_of_songs'] = number_of_songs
+#     return album_dict
+
+
+# while True:
+#     print("\nPlease enter the artist and album information:")
+#     print("(enter 'q' at any time to quit)")
+
+#     artist = input("Artist name: ")
+#     if artist.lower() == 'q':
+#         break
+
+#     title = input("Album title: ")
+#     if title.lower() == 'q':
+#         break
+
+#     album = make_album(artist, title)
+#     print(f"Album info: {album}")
+
+#     keep_going = input("Would you like to enter another album? (yes/no) ")
+#     if keep_going.lower() != 'yes':
+#         break
+
+# print("Thank you for using the album entry program!")
+
 
 # 8-9. Messages: Make a list containing a series of short text messages. Pass the
 # list to a function called show_messages(), which prints each text message.
+
+
+# def show_messages(messages):
+#     for message in messages:
+#         print(message)
+
+# messages_list = ["What are you up to?", "Thank you for the gift!",
+#                  "Do you have time for a chat?", "Could you pick me up from the airport?"]
+
+# show_messages(messages_list)
+
 
 # 8-10. Sending Messages: Start with a copy of your program from Exercise 8-9.
 # Write a function called send_messages() that prints each text message and moves
 # each message to a new list called sent_messages as it's printed. After calling the
 # function, print both of your lists to make sure the messages were moved correctly.
 
+# def show_messages(messages):
+#     for message in messages:
+#         print(message)
+
+
+# def send_messages(unsent_messages, sent_messages):
+#     while unsent_messages:
+#         current_message = unsent_messages.pop()
+#         print(f"Sending message: {current_message}")
+#         sent_messages.append(current_message)
+
+
+# messages_list = ["What are you up to?", "Thank you for the gift!",
+#                  "Do you have time for a chat?", "Could you pick me up from the airport?"]
+
+# # Show the original messages
+# show_messages(messages_list)
+
+# # Lists for sending messages
+# unsent_messages = messages_list[:]
+# sent_messages = []
+
+# send_messages(unsent_messages, sent_messages)
+
+# print("\nOriginal Messages:", messages_list)
+# print("Unsent Messages:", unsent_messages)
+# print("Sent Messages:", sent_messages)
+
+
 # 8-11. Archived Messages: Start with your work from Exercise 8-10. Call the
 # function send_messages() with a copy of the list of messages. After calling the
 # function, print both of your lists to show that the original list has retained its
 # messages.
+
+# def show_messages(messages):
+#     for message in messages:
+#         print(message)
+
+# def send_messages(unsent_messages, sent_messages):
+#     while unsent_messages:
+#         current_message = unsent_messages.pop(0)  # Pop from the beginning to maintain order
+#         print(f"Sending message: {current_message}")
+#         sent_messages.append(current_message)
+
+# # Original list of messages
+# messages_list = ["What are you up to?", "Thank you for the gift!",
+#                  "Do you have time for a chat?", "Could you pick me up from the airport?"]
+
+# # Lists for sending messages
+# unsent_messages = messages_list[:]  # Copy of the original messages
+# sent_messages = []
+
+# # Send the messages
+# send_messages(unsent_messages, sent_messages)
+
+# # Display the results
+# print("\nOriginal Messages:", messages_list)
+# print("Sent Messages:", sent_messages)
+
 
 # 8-12. Sandwiches: Write a function called make_sandwich() that accepts a list of
 # items a person wants on a sandwich. The function should have one parameter that
 # collects as many items as the function call provides, and it should print a summary
 # of the sandwich that’s being ordered. Call the function three times, using a
 # different number of arguments each time.
+
+def make_sandwich(*ingredients):
+    print("Making a sandwich with the following ingredients:")
+    for ingredient in ingredients:
+        print(f"- {ingredient}")
+
+
+make_sandwich("cheese", "Portabella", "Pesto")
+make_sandwich("cheese", "Turkey", "Tomato")
+make_sandwich("Spinach", "Portabella", "Mayo")
+
 
 # 8-13. User Profile: Start with a copy of user_profile.py from page 148. Build a
 # profile of yourself by calling build_profile(), using your first and last names
@@ -128,35 +237,3 @@
 # 8-14. Cars: Write a function that stores information about a car in a dictionary.
 # The function should always receive a manufacturer and a model name. It should then
 # accept an arbitrary
-
-def make_album(artist_name, album_title, number_of_songs=None):
-    """Build a dictionary containing information about an album."""
-    album_dict = {
-        'artist': artist_name,
-        'album': album_title,
-    }
-    if number_of_songs:
-        album_dict['number_of_songs'] = number_of_songs
-    return album_dict
-
-
-while True:
-    print("\nPlease enter the artist and album information:")
-    print("(enter 'q' at any time to quit)")
-
-    artist = input("Artist name: ")
-    if artist.lower() == 'q':
-        break
-
-    title = input("Album title: ")
-    if title.lower() == 'q':
-        break
-
-    album = make_album(artist, title)
-    print(f"Album info: {album}")
-
-    keep_going = input("Would you like to enter another album? (yes/no) ")
-    if keep_going.lower() != 'yes':
-        break
-
-    print("Thank you for using the album entry program!")
